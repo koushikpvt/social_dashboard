@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics Dashboard</title>
+</head>
+<body>
+    <h1>Analytics Dashboard</h1>
+    <p>Here are the user statistics:</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Users</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in chart_data.Date.keys %}
+            <tr>
+                <td>{{ chart_data.Date.i }}</td>
+                <td>{{ chart_data.Users.i }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
